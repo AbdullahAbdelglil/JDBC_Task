@@ -90,7 +90,7 @@ public class UserMenu {
         System.out.print("Please Enter The ID : ");
         int id = in.nextInt();
         String empData = Employee.searchById(id);
-        System.out.println("Employee With Id : "+id+" -> |"+empData);
+        System.out.println("Employee With Id : "+id+" -> | "+empData);
     }
 
     //Update Method
@@ -186,6 +186,7 @@ public class UserMenu {
         int id;
         String name,phNum,email,formatOutput;
         try{
+            System.out.println();
             System.out.println(" -----------------------------------------------------------------------------------------------");
             System.out.println("|     ID     |               Name               |     Phone Number     |          Email          |");
             System.out.println(" ------------------------------------------------------------------------------------------------");
@@ -197,7 +198,7 @@ public class UserMenu {
                 formatOutput = String.format("|  %-8d  |  %-30s  |  %-18s  |  %-21s  |",id,name,phNum,email);
                 System.out.println(formatOutput);
             }
-            System.out.println("---------------------------------------------------------------------------------------------------\n");
+            System.out.println("-----------------------------------------------------------------------------------------------\n");
             split();
         }catch (SQLException e){
             System.out.println(e.getMessage());
