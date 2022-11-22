@@ -175,7 +175,7 @@ public class UserMenu {
             in.nextLine();
             confirm=in.nextLine();
             confirm=confirm.toLowerCase();
-        if (confirm == "yes") {
+        if (confirm.equals("yes") {
             Employee.deleteAllEmp();
             System.out.println("All Data Deleted Successfully");
         }
@@ -186,9 +186,9 @@ public class UserMenu {
         int id;
         String name,phNum,email,formatOutput;
         try{
-            System.out.println("\n--------------------------------------------------------------------------------------------------");
+            System.out.println(" -----------------------------------------------------------------------------------------------");
             System.out.println("|     ID     |               Name               |     Phone Number     |          Email          |");
-            System.out.println("--------------------------------------------------------------------------------------------------");
+            System.out.println(" ------------------------------------------------------------------------------------------------");
             while(result.next()){
                 id = result.getInt(1);
                 name = result.getString(2);
