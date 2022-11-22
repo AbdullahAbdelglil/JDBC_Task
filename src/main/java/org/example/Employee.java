@@ -33,7 +33,7 @@ public class Employee {
             preparedStatement = connection.prepareStatement(sql);
             result = preparedStatement.executeQuery();
             result.next();
-            String empData = result.getString(2)+" | "+result.getString(3)+" | "+ result.getString(4);
+            String empData = result.getString(2)+" | "+result.getString(3)+" | "+ result.getString(4)+" |";
             return empData;
         } catch (SQLException e) {
             return "This Emp_Id Not Founded In DataBase!";
